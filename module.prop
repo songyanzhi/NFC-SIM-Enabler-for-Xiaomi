@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
+id=minfcsim
+name=Xiaomi NFC-SIM Enabler
+version=1.0
 versionCode=1
-author=topjohnwu
-description=A short description
-template=4
+author=Songyanzhi
+description=啟用小米NFC-SIM功能。
+template=3
