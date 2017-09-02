@@ -55,12 +55,7 @@ POSTFSDATA=false
 #    or /system/etc/init.d
 LATESTARTSERVICE=false
 
-# The minimum and maximum APIs that will be used by the module
-# ** Do not make MINAPI greater than MAXAPI or the other way around!
-#    Make MINAPI & MAXAPI equal if you want it soecific to only one Android version
-#    Leave blank to disable detection
-MINAPI=
-MAXAPI=
+
 
 ##########################################################################################
 # Installation Message
