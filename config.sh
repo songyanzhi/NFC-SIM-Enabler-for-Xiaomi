@@ -59,7 +59,7 @@ LATESTARTSERVICE=false
 # ** Do not make MINAPI greater than MAXAPI or the other way around!
 #    Make MINAPI & MAXAPI equal if you want it soecific to only one Android version
 #    Leave blank to disable detection
-MINAPI=21
+MINAPI=
 MAXAPI=
 
 ##########################################################################################
@@ -70,10 +70,7 @@ MAXAPI=
 
 print_modname() {
   ui_print "******************************"
-  ui_print " 小米NFC-SIM啟用模組  "
-  ui_print " ----------------------------- "
-  ui_print " 安裝NFC-SIM功能所需元件  "
-  ui_print " 宋硯之 製作  "
+  ui_print " Xiaomi NFC-SIM Enabler  "
   ui_print "******************************"
 }
 
@@ -100,35 +97,7 @@ REPLACE="
 # Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
-
 "
-
-##########################################################################################
-# Install Configuration
-##########################################################################################
-
-# You can tweak your installation process by putting Overridable variables (shell) below or in /dev/.config
-#   #variables (shell)    #type       #values          #description
-#
-#   MAGISKINSTALL         magisk      true/false     - forces magisk installation (might conflict with SYSTEMINSTALL)
-#   SYSTEMINSTALL         system      true/false     - forces system installation (might conflict with MAGISKINSTALL)
-#   INITPATH              system      directories    - sets path to install scripts if system install
-#                                                      applies to: post-fs-data.sh, service.sh, prop script
-#   BUILDPROP             system      true/false     - sets properties from system.prop directly to build.prop
-#   PERMANENTDELETE       system      true/false     - PERMANENTLY delete folders in $REPLACE
-#   ERROREXIT          magisk/system  true/false     - exits with an error on every failed attempt to install to Magisk (enabled by default)
-#                                                      if disabled, the installer will proceed with installing to /system (if possible)
-
-# The configuration here will be overwritten in /dev/.config
-# Leave it blank if you don't need it.
-# MAGISKINSTALL is enabled by default to prioritize Magisk.
-# To enable auto-detection of installation, leave MAGISKINSTALL and SYSTEMINSTALL blank and ERROREXIT to false.
-MAGISKINSTALL=
-SYSTEMINSTALL=
-INITPATH=
-BUILDPROP=true
-PERMANENTDELETE=false
-ERROREXIT=false
 
 ##########################################################################################
 # Permissions
